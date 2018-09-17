@@ -21,12 +21,7 @@
 	width: 100px
 }
 
-.pre4 {
-  position: absolute;
-  top: 40px;
-  font-size: 50px;
-  text-align: center;
-}
+
 
 
 nav {
@@ -81,7 +76,10 @@ nav {
       }
       
       nav a:hover {
-          background-color: #ac3826;
+          animation-name: animationMenu; 
+          animation-duration: 5s; 
+          animation-iteration-count: infinite; opacity: 0.6;
+
     }
 .footer {
     position: static;
@@ -91,14 +89,108 @@ nav {
     text-align: left;
 }
 
+@keyframes bouncing{
+  0%  { bottom: 0;}
+  100%{ bottom: 50px;}
+}
+
+
+.animation1 {
+    animation: bouncing 0.7s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    margin-left: 100px
+}
+
+.animation2 {
+    animation: bouncing 0.7s cubic-bezier(.1,.25,.1,1) 0s infinite alternate both;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    width: 450px;
+    height: 600px;
+    position: absolute;
+    margin-left: 800px;
+}
+
+.pre1{
+	margin-top: -850px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	margin-left: 400px;a
+}
+
+.pre4 {
+  position: absolute;
+  top: 40px;
+  font-size: 50px;
+  text-align: center;
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes animationMenu{
+  	from {
+  		background-color: none;
+  	}
+  	12.5%{
+  		background-color: #ff0000;
+  	}
+
+  	25%{
+  		background-color: #ffa800;
+  	}
+
+  	37.5%{background-color: #fffc00;
+  	}
+
+  	50%{
+  		background-color: #30ff00;
+  	}
+
+  	62.5%{background-color: #00deff;}
+
+  	75%{background-color: #0600ff;}
+
+  	87.5%{
+  		background-color: #5400ff;
+  	}
+  	to{
+  		background-color: #9600ff;
+  	}
+  }
+
 </style>
 <body>
 	<div class="parent1">
 		<img style="width: 1440px" src="http://cdn.dota2.com/apps/dota2/images/international2017/overview/bg_titlebar.jpg">
 		<p class="pre4" style="color: white; margin-left:43%; text-align: center;">Groups</p>
 		<img style="width: 1440px; margin-top: -4px" src="http://cdn.dota2.com/apps/dota2/images/international2018/overview/bg_standard.jpg">
-		<img style="width: 450px; height: 600px; position: absolute;margin-left: 900px; margin-top: -800px" src="https://pp.userapi.com/c847218/v847218900/ecf7b/9zn7zxQEQ-o.jpg">
-		<img style="width: 450px; height: 600px; position: absolute;margin-top: -800px; margin-left: 100px" src="https://pp.userapi.com/c847218/v847218900/ecf85/s5-1ZShcrA4.jpg">
+		<pre class="pre1">Two groups of nine teams.	
+Teams play every other team in their group in a best-of-two.	
+Top four teams in each group advance to Upper Bracket of the Main Event.	
+Teams in 5-8 place in each group advance to Lower Bracket of the Main Event.	
+Bottom team from each group is eliminated.
+		</pre>
+		<img class="animation2" src="https://pp.userapi.com/c847218/v847218900/ecf7b/9zn7zxQEQ-o.jpg">
+		<img class="animation1" src="https://pp.userapi.com/c847218/v847218900/ecf85/s5-1ZShcrA4.jpg">
 		 <nav>
   <ul>
   <li style="margin-left: 100px"><a class="active" href="file:///Users/ximbest/The%20International.html#main">Main</a></li>
@@ -118,10 +210,8 @@ nav {
 </ul>
 </nav>
 	</div>
-
 <div class="footer">
 	<img style="margin-top: -4px; margin-bottom: 0; width: 1440px" src="http://cdn.dota2.com/apps/dota2/images/blog/play/bg_10.jpg" width="1460px">
 </div>
-
 </body>
 </html>
