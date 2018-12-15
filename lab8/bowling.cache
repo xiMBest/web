@@ -1,0 +1,27 @@
+CACHE MANIFEST
+# version 1.0
+
+CACHE:
+styles.css
+images/bottom.jpg
+images/icon.png
+images/main.jpg
+bowling_balls.png
+images/bowling_balls.png
+bowling2.jpg
+contacts.html
+error.html
+index.html
+fans.html
+admin.html
+news.html
+js/bootstrap.min.js
+js/bootstrap.min.js.map
+js/jquery-3.3.1.min.js
+css/bootstrap.min.css
+js/fans.js
+js/admin.js
+js/news.js
+
+FALLBACK:
+/bowling_clubs.html /error.html
