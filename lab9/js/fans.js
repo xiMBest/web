@@ -27,7 +27,7 @@ function reviewTemplate (review) {
     `
 }
 
-var useLocalStorage = false;
+var useLocalStorage = true;
 
 function isOnline() {
     return window.navigator.onLine;
